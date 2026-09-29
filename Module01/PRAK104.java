@@ -1,22 +1,31 @@
-package Module01;
+package module01;
 
 import java.util.Scanner;
 
 public class PRAK104 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+
+        char[] abuHand = new char[3];
+        char[] bagasHand = new char[3];
 
         System.out.print("Tangan Abu: ");
-        String abu = sc.nextLine().replaceAll("\\s+", "").toUpperCase();
+        for (int i = 0; i < 3; i++) {
+            abuHand[i] = input.next().charAt(0);
+        }
 
         System.out.print("Tangan Bagas: ");
-        String bagas = sc.nextLine().replaceAll("\\s+", "").toUpperCase();
+        for (int i = 0; i < 3; i++) {
+            bagasHand[i] = input.next().charAt(0);
+        }
 
         int abuScore = 0;
         int bagasScore = 0;
+
         for (int i = 0; i < 3; i++) {
-            char a = abu.charAt(i);
-            char b = bagas.charAt(i);
+            char a = abuHand[i];
+            char b = bagasHand[i];
+
             if (a != b) {
                 if ((a == 'B' && b == 'G') || (a == 'G' && b == 'K') || (a == 'K' && b == 'B')) {
                     abuScore++;
