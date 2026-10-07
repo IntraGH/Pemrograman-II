@@ -1,8 +1,10 @@
 package Module02.PRAK203;
 
+//Dibaris 4 Nama class diubah dari "Pegawai" agar sesuai saat dipanggil
+//public class Pegawai {
 public class Employee {
     public String name;
-    //Di baris 7 muncul error karna tipe data 'char' cuma bisa nyimpan 1 karakter atau huruf aja.
+    //Di baris 9 muncul error karna tipe data 'char' cuma bisa nyimpan 1 karakter atau huruf aja.
     //public char origin;
     public String origin;
     public String role;
@@ -16,7 +18,7 @@ public class Employee {
         return origin;
     }
 
-    //Di baris 21 Error karena gak ada parameter
+    //Di baris 23 Error karena gak ada parameter
     //public void setRole() {
     public void setRole(String r) {
         this.role = r;
