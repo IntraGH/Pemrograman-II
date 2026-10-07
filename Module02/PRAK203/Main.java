@@ -12,10 +12,12 @@ public class Main {
         //Di baris 13 kode umur belum diisi
         e.age = 17;
 
+        //Di baris 17 menyesuaikan dengan permintaan Output soal
+        //System.out.println("Nama Pegawai: " + e.getName());
         System.out.println("Nama: " + e.getName());
         System.out.println("Asal: " + e.getOrigin());
         System.out.println("Jabatan: " + e.role);
-        //Di baris 20 output tabelnya ada kata "tahun" di belakang angka umur
+        //Di baris 22 output tabelnya ada kata "tahun" di belakang angka umur
         //System.out.println("Umur: " + e.age);
         System.out.println("Umur: " + e.age + " tahun");
     }
