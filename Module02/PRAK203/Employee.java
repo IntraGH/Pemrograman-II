@@ -1,6 +1,6 @@
 package Module02.PRAK203;
 
-//Dibaris 4 Nama class diubah dari "Pegawai" agar sesuai saat dipanggil
+//Di baris 4 Nama class diubah dari "Pegawai" agar sesuai saat dipanggil
 //public class Pegawai {
 public class Employee {
     public String name;
