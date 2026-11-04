@@ -13,6 +13,11 @@ public class Main {
         int choice = input.nextInt();
         input.nextLine();
 
+        if (choice != 1 && choice != 2) {
+            System.out.println("Input Tidak Valid");
+            return;
+        }
+
         System.out.print("Nama hewan peliharaan: ");
         String name = input.nextLine();
 
@@ -27,7 +32,7 @@ public class Main {
 
             System.out.println();
             cat.displayCatDetails();
-        } else {
+        } else if (choice == 2) {
             System.out.print("Warna Bulu: ");
             String furColor = input.nextLine();
 
